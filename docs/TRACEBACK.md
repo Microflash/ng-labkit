@@ -2,7 +2,8 @@
 
 > A TRACEBACK is a file containing a series of steps to recreate a project from scratch
 
-- [Generate the project with Angular CLI](#generate-the-project-with-angular-cli)
+1. [Generate the project with Angular CLI](#generate-the-project-with-angular-cli)
+2. [Code formatting](./stories/code-formatting.md)
 
 ## Generate the project with Angular CLI
 
