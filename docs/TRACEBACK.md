@@ -5,6 +5,7 @@
 1. [Generate the project with Angular CLI](#generate-the-project-with-angular-cli)
 2. [Code formatting](./stories/code-formatting.md)
 3. [Continuous Integration](./stories/continuous-integration.md)
+4. [Code Coverage](./stories/code-coverage.md)
 
 ## Generate the project with Angular CLI
 
