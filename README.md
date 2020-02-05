@@ -4,5 +4,7 @@ A [labkit](https://gitlab.com/labkit) for Angular
 
 ## [Docs](./docs/)
 
-- [Stories](./stories/)
-- [Traceback](./TRACEBACK.md)
+- [Development](./docs/development.md)
+- [Deployment](./docs/deployment.md)
+- [Stories](./docs/stories/)
+- [Traceback](./docs/TRACEBACK.md)
