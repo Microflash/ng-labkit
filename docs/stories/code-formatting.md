@@ -35,7 +35,7 @@ Modify the lint script in `package.json` as follows.
 ```json
 "lint": "npm-run-all lint:*",
 "lint:scripts": "ng lint",
-"lint:styles": "stylelint \"src/**/*.scss\" --cache --cache-location .cache/.stylelintcache",
+"lint:styles": "stylelint \"src/**/*.less\" --cache --cache-location .cache/.stylelintcache",
 ```
 
 `lint:styles` will search for SASS files in `src` directory for linting and store a cache of results at `.cache/.stylelintcache`. Make sure that `.cache/` is in your `.gitignore`.

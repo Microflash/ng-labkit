@@ -11,7 +11,7 @@
     "webdriver:update": "webdriver-manager update --standalone false --gecko false --versions.chrome 2.41",
     "lint": "npm-run-all lint:*",
     "lint:scripts": "ng lint",
-    "lint:styles": "stylelint \"src/**/*.scss\" --cache --cache-location .cache/.stylelintcache",
+    "lint:styles": "stylelint \"src/**/*.less\" --cache --cache-location .cache/.stylelintcache",
     "e2e": "ng e2e",
     "e2e:ci": "ng e2e --configuration=ci"
   },
