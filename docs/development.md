@@ -12,7 +12,7 @@ Use [ng generate](https://angular.io/cli/generate) to scaffold components, servi
 
 #### Build
 
-Run `yarn build` to generate a production build. The build artifacts will be stored in the `dist/ng-labkit/` directory.
+Run `yarn build:ssr` to generate an SSR build. The build artifacts will be stored in the `dist` directory. Then serve it using `yarn serve:ssr` and navigate to http://localhost:4000/.
 
 ng-labkit comes with linting, testing and coverage workflows out-of-the-box.
 

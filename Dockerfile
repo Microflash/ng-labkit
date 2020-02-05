@@ -21,12 +21,11 @@ RUN yarn e2e:ci --webdriver-update=false
 FROM node:alpine as builder
 WORKDIR /app
 COPY --from=installer /app .
-RUN yarn build
+RUN yarn build:ssr
 
 # Serve with Nginx
-FROM nginx:alpine
-RUN rm -rf /usr/share/nginx/html/*
-COPY default.conf /etc/nginx/conf.d/
-COPY --from=builder /app/dist/ng-labkit /usr/share/nginx/html
-EXPOSE 4200
-CMD ["nginx", "-g", "daemon off;"]
+FROM node:alpine
+WORKDIR /app
+COPY --from=builder /app/dist .
+EXPOSE 4000
+CMD ["node", "server.js"]
