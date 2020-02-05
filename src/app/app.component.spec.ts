@@ -26,8 +26,8 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain(
-      'ng-labkit app is running!'
+    expect(compiled.querySelector('.inner-content').textContent).toContain(
+      ' A labkit for Angular '
     );
   });
 });
