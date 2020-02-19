@@ -13,15 +13,13 @@
 Run the following script to generate the project with routing and SASS support, and Ivy Renderer enabled.
 
 ```sh
-ng new ng-labkit --routing=true --style=scss --enableIvy=true
+ng new ng-labkit --routing=true --style=scss
 ```
-
-> **WARNING** Ivy is not supported by Angular Universal; don't enable it if you want an SSR app.
 
 ## Add SSR support
 
 Run the following script to add Angular Universal support.
 
 ```sh
-ng add @nguniversal/express-engine --clientProject ng-labkit
+ng add @nguniversal/express-engine
 ```

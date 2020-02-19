@@ -26,6 +26,6 @@ RUN yarn build:ssr
 # Serve with Nginx
 FROM node:alpine
 WORKDIR /app
-COPY --from=builder /app/dist .
+COPY --from=builder /app/dist/ng-labkit .
 EXPOSE 4000
-CMD ["node", "server.js"]
+CMD ["node", "server/main.js"]
